@@ -58,8 +58,8 @@ To run the project locally, follow the steps below.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Sviat-lu/user-anagement-system-api
-   cd user-anagement-system-api
+   git clone https://github.com/Sviat-lu/user-management-system-api
+   cd user-management-system-api
    ```
 
 2. Set up environment variables in `.env.template`:
@@ -97,8 +97,8 @@ This will start the FastAPI server and the PostgreSQL database.
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Sviat-lu/user-anagement-system-api
-   cd user-anagement-system-api
+   git clone https://github.com/Sviat-lu/user-management-system-api
+   cd user-management-system-api
    ```
 2. **Set Up the Virtual Environment:**
 
