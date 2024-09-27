@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "src"
+version = "0.1.0"
+description = "Test user API built with FastAPI and PostgreSQL"
+authors = ["Lukianov Sviatoslav <lukianov.sviatoslav@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sqlalchemy = "^2.0.35"
+fastapi = "^0.115.0"
+uvicorn = "^0.30.6"
+python-dotenv = "^1.0.1"
+asyncpg = "^0.29.0"
+pre-commit = "^3.8.0"
+email-validator = "^2.2.0"
+pandas = "^2.2.3"
+openpyxl = "^3.1.5"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+line_length = 79
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "src/"
+addopts = "-vv -p no:cacheprovider --disable-warnings"
+testpaths = ["tests/"]
+python_files = ["test_*.py"]
+asyncio_mode= "auto"
